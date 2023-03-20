@@ -1,0 +1,110 @@
+
+.id{
+    font-family: 'Roboto', sans-serif; 
+    color:white;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    padding: 20px 10px 14px 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    
+    
+
+}
+.logo{
+    display: flex;
+    margin-top: -20px;
+    margin-left: -170px;
+    width: 50px;
+    
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+li{
+    float: left;
+    
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+}
+li a:hover{
+    padding-block: 0.2rem;
+    padding-inline: 0.2rem;
+    
+   
+}
+
+
+
+.menu{
+    font-family: 'Roboto', sans-serif; 
+    padding: 1px 1px 1px 1px;
+    font-size: 18px;
+        
+        
+}
+
+.busca{
+    display: block;
+    background: #292A30;
+    border: 2px solid #737578;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 310px;
+    padding: 25px 5px 5px 2px;
+    outline: none;
+    
+    
+
+}
+.caixa-maior{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycfAgwqa9nwFt5UozqrhZW3Em9BDQpFOSnQ&usqp=CAU') ;
+    width: 320px;
+    height: 130px;
+    
+    
+}
+input{
+    margin-bottom: 30px;
+    margin-left: 70px;
+    width: 200px;
+}
+.caixa-master{
+    width: 10%;
+    min-width: 320px;
+    height: 97.6vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px #0000004d;
+    background-color: white;
+
+}
+
+body{
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs2Io4UWPKNNyYtb4ygpL7CnNjmEhlz7pBGA&usqp=CAU');*/
+    background-position:center;
+    background-size: contain;
+    
+    
+}
+p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+img{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 170px;
+}
