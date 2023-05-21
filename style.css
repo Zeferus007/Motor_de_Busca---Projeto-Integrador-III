@@ -27,31 +27,8 @@
     
     
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-    
-}
-li{
-    float: left;
-    
-}
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 22px;
-    text-decoration: none;
-}
-li a:hover{
-    padding-block: 0.2rem;
-    padding-inline: 0.2rem;
-    
-   
-}
+
+
 
 
 
@@ -64,6 +41,49 @@ li a:hover{
         
         
 }
+nav {
+    color: white;
+    margin-top: 15px;
+    
+}
+.tabs-wrapper {
+    display: flex;
+    
+  }
+  
+  .tab {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+    margin-top: -20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+  }
+  
+  .tab.active {
+    border-bottom: 3px solid blue;
+    
+  }
+  
+  .content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    
+  }
+  
+  .content.active {
+    display: block;
+    margin-top: 15px;
+  }
+  .botao-buscar{
+    margin-left: 130px;
+  }
 
 .busca{
     display: block;
@@ -78,10 +98,26 @@ li a:hover{
     
 
 }
+.here{
+    width: 20px;
+    height: 20px;      
+    margin-left: 30px;  
+    
+
+}
+.go{
+    width: 20px;
+    height: 20px;      
+    margin-left: 30px;
+    
+}
 .caixa-maior{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycfAgwqa9nwFt5UozqrhZW3Em9BDQpFOSnQ&usqp=CAU') ;
     width: 320px;
     height: 130px;
+    
+   
+    
     
     
 }
@@ -98,6 +134,8 @@ input{
     flex-direction: column;
     box-shadow: 0 0 5px #0000004d;
     background-color: white;
+    
+    
 
 }
 
@@ -112,8 +150,17 @@ p{
     font-size: 15px;
     margin-left: 15px;
 }
-img{
-    width: 200px;
-    margin-left: 50px;
-    margin-top: 170px;
-}
+
+#map {
+    width: 322%;
+    height: 680px;
+    position:relative;
+    left:101%;
+    top:-210%;
+
+    
+  }
+
+
+
+  

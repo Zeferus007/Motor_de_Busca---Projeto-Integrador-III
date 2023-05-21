@@ -8,13 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/localizacao.png">
+    <link rel="icon" href="./assets/localizacao.png">   
+    <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" type="text/css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    
+    
     <title>BusMobiGO</title>
     
+
+        
 </head>
 
 
 <body>        
+  
+
+    
         
         <div class="caixa-master">           
             
@@ -27,37 +39,86 @@
                 <p class="slogan">Seu caminho Livre</p>
             </div>
             
+            <section>
+              <nav>
+                <div role="tablist" class="links">
+                  <div class="tabs-wrapper">
+                    <button role="tab" tabindex="0" class="tab active" aria-selected="true" id="itinerarios">
+                      Itinerários
+                    </button>
+                    <button role="tab" tabindex="0" class="tab" aria-selected="false" id="rotas">
+                      Rotas
+                    </button>
+                    <button role="tab" tabindex="0" class="tab" aria-selected="false" id="clima">
+                      Clima
+                    </button>
+                  </div>
+                </div>
+              </nav>
+              
+              <div id="itinerariosContent" class="content active">
+                
+                <input type="text" placeholder="Estou aqui..."> 
+                <input type="text" placeholder="Quero ir para..."> 
+                <button class="botao-buscar" >Buscar</button>
+              </div>
+                            
+              <div id="rotasContent" class="content">
+                
+                <input type="text" placeholder="Digite a sua rota...">
+                <button>Buscar</button>
+              </div>
+              
+              <div id="climaContent" class="content">
+                
+                <input type="text" placeholder="Digite a cidade...">
+                <button>Buscar</button>                           
 
-            <nav class = "menu">
-                <ul>
-                    <li><a href="tab active"> Rotas </a></li> 
-                    <li><a href="tab active"> Itinerários </a></li> 
-                    <li><a href="tab active"> Clima </a></li> 
-                    <div class="active"></div>
-                    
-                </ul>
-                
-            </nav>
-        </div>
-                
-           <div class="busca">
-                <div class="img-conector"></div>
-                <input type="text" class="input"
-            placeholder="De">
-                <input type="text" class="input"
-            placeholder="Para">
-            </div>
-                
+              </div>
 
+              <div id="resultados"></div>
+
+              <script>// seleciona os botões de navegação e conteúdos
+                const tabs = document.querySelectorAll('.tab');
+                const contents = document.querySelectorAll('.content');//
+                
+                // adiciona o listener de clique para cada botão
+                tabs.forEach((tab, index) => {
+                  tab.addEventListener('click', () => {
+                    // remove a classe "active" de todos os botões e conteúdos
+                    tabs.forEach((tab) => tab.classList.remove('active'));
+                    contents.forEach((content) => content.classList.remove('active'));
+                    //adiciona a classe "active" apenas ao botão e conteúdo correspondentes
+                    tab.classList.add('active');
+                    contents[index].classList.add('active');
+                  });
+                });</script>
+
+              
+          
+            </section>
+
+               
+            <div id="map"></div> 
             
-
-        </div>
             
-        
-
-     
+           
+            
+          
     
-</body>
+  </body>
+  
+  
+  
+  <script src="script.js"></script>   
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcq_ZxQ-48jj7YZxG9XfA6wKSMjljlOkw&callback=initMap"></script>
+
+  
+
+  
+  
+  
 
 </html>
 

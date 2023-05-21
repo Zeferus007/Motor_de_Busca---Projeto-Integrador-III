@@ -1,0 +1,31 @@
+{
+  "name": "codelab-js-maps-api-101",
+  "version": "1.0.0",
+  "description": "An example app to accompany the Google Maps Platform 101: JavaScript codelab",
+  "main": "/src/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --hot --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Muramoto",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/markerclustererplus": "^5.0.3",
+    "@googlemaps/js-api-loader": "^1.12.1",
+    "bus-promise": "^1.1.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeferus007/Projeto-Intregrador-III_Fatec.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zeferus007/Projeto-Intregrador-III_Fatec/issues"
+  },
+  "homepage": "https://github.com/Zeferus007/Projeto-Intregrador-III_Fatec#readme"
+}
